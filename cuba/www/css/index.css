@@ -44,7 +44,7 @@ body {
 }
 
 #startPages{
-    background-image: url(../images/backgrnd.png);/* no-repeat center top;*/
+    background-image: url(../images/bkgrnd.png);/* no-repeat center top;*/
     position: absolute;
 }
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
