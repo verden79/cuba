@@ -41,6 +41,21 @@ angular.module('starter.controllers', [])
   };
 })
 
+
+
+.controller("EnterController", function ($scope, $ionicModal) {
+    $ionicModal.fromTemplateUrl('templates/login.html', { scope: $scope })
+    .then(function(modal) 
+    {
+        $scope.modal = modal;
+    });
+
+    $scope.inmenu = function() {
+    $scope.modal.show();
+    };
+
+})
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },

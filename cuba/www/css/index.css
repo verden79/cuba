@@ -43,12 +43,12 @@ body {
     margin: -115px 0px 0px -112px;
 }
 
+#startPages{
+    background-image: url(../images/backgrnd.png);/* no-repeat center top;*/
+    position: absolute;
+}
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;
-        margin:-90px 0px 0px -198px;
-    }
+
 }
 
 h1 {
