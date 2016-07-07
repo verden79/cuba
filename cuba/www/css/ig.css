@@ -1,0 +1,20 @@
+﻿body {
+}
+
+.bgpict{
+    position:absolute;
+    top:0px;
+    left:10px;
+}
+
+.bgpictr{
+    position:absolute;
+    top:5px;
+    right:10px;
+}
+.textmenuup{
+    position:absolute;
+    color:white;
+    top:90px;
+    left:20px;
+}

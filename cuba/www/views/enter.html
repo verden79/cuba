@@ -1,0 +1,28 @@
+<ion-view view-title="NewsBoard">
+    <ion-content>
+            <!-- тестовый блок --> 
+          <div>  
+            <h4 id="hd-login" > Вход в профиль </h4>
+
+            <form class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="login" ng-model="log">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="password" ng-model="pas">
+                </label>
+
+                <a id="bt-login" class="button button-assertive" href="/#/menu/page1">
+                        Войти
+                </a>
+               
+            </form>
+       
+            <div id="dv-bt-def">
+                <button id="bt-default" class="button button-assertive" ng-click="goreg()">
+                    Регистрация
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
