@@ -43,10 +43,36 @@ body {
     margin: -115px 0px 0px -112px;
 }
 
-#startPages{
-    background-image: url(../images/bkgrnd.png);/* no-repeat center top;*/
-    position: absolute;
+
+.startPages{
+    width:100%;
+    height:100%;
+    margin: 0;
+    background: url(../images/bkgrnd.png) no-repeat center top fixed;/* no-repeat center top;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     color: #c6c5c6;
+     text-align: center;
 }
+    .startPages #logo {
+        width: 100%;
+        height: 50%;
+        color: #fff;
+    }
+
+    .startPages form label.item {
+        background-color:transparent;
+    }
+    .startPages form label.item button{
+        background-color: #bf447c;
+    }
+.startPages a{  
+    text-decoration: none;
+    color: #c6c5c6;
+}
+
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
 
 }
