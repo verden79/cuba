@@ -47,7 +47,7 @@ body {
 .startPages{
     width:100%;
     height:100%;
-    margin: 0;
+    /*margin: 0;*/
     background: url(../images/bkgrnd.png) no-repeat center top fixed;/* no-repeat center top;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -58,21 +58,51 @@ body {
 }
     .startPages #logo {
         width: 100%;
-        height: 50%;
+        height: 45%;
         color: #fff;
+        margin:auto;
+        padding-top: 48%;
     }
-
+    .startPages form{
+        display:block;
+        width: 100%;
+        padding: 0 1em 0 1em;
+    }
     .startPages form label.item {
+        width:100%;
+        padding: 0;
         background-color:transparent;
+        border-bottom: 1px solid #cfcfcf;
     }
-    .startPages form label.item button{
+    #lb-bt-V{
+        padding: 0;
+        background-color:transparent;
+        border: none;
+    }
+    #bt-V{
         background-color: #bf447c;
+    }
+    .startPages form input{
+        color:#b3b1b4;
+        
+    }
+    .startPages form label{
+        border: none;
+    }
+    .startPages form span{
+        text-align: left;
+        float:left;
+        color: #bf447c;
+        font-size: 70%;
+        font-weight:500;
     }
 .startPages a{  
     text-decoration: none;
-    color: #c6c5c6;
+    color: #b3b1b4;
 }
-
+a.my-link{
+    font-size: small;
+}
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
 
 }

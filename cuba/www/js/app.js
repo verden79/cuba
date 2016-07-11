@@ -24,24 +24,18 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-
-
       .state('login', {
           url: '/login',
           templateUrl: 'templates/login.html',
           controller: 'EnterController'
       })
-
-
-      .state('app.playlists', {
-          url: '/playlists',
-          views: {
-              'menuContent': {
-                  templateUrl: 'templates/playlists.html',
-                  controller: 'PlaylistsCtrl'
-              }
-          }
-      });
+    .state('repair', {
+        url: '/repair',
+        views: {
+            templateUrl: 'templates/repair.html',
+            controller: 'RepController'
+        }
+    });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 });

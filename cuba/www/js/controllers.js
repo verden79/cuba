@@ -43,19 +43,46 @@ angular.module('starter.controllers', [])
 
 
 
-.controller("EnterController", function ($scope, $ionicModal) {
+.controller("EnterController", function ($scope, $ionicModal, $ionicHistory) {
+
+    $scope.loginData = {};
+
+    
+
     $ionicModal.fromTemplateUrl('templates/login.html', { scope: $scope })
-    .then(function(modal) 
-    {
+    .then(function (modal) {
         $scope.modal = modal;
     });
 
-    $scope.inmenu = function() {
-    $scope.modal.show();
+    $scope.inmenu = function () {
+        $scope.modal.show();
+    };
+    
+
+    // Triggered in the login modal to close it
+    $scope.closeLogin = function () {
+        $scope.modal.hide();
     };
 
+    // Open the login modal
+    $scope.login = function () {
+        $scope.modal.show();
+    };
+
+    // Perform the login action when the user submits the login form
+    $scope.doLogin = function () {
+        console.log('Doing login', $scope.loginData);   
+    }    ;
+    $scope.gorRepair = function () {
+              
+    };
 })
 
+
+.controller('RepController', function ($scope, $ionicHistory) {
+
+    $state.go('repair');
+})
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
